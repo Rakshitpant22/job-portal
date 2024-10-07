@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background: linear-gradient(to left, rgb(55, 129, 197), rgb(167, 134, 69), rgb(45, 27, 14))
+  }
+}
