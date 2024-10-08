@@ -7,12 +7,12 @@ function JobCard(props) {
     const diffInDays = date1.diff(props.postedOn,'day');
   return (
     <div className='mx-40 mb-4'>
-    <div className='flex justify-between items-center px-6 py-5 bg-gray-300 text-black rounded-lg border border-gray-700 shadow-lg hover:shadow-xl hover:border-blue-400 hover:-translate-y-1 transition-all duration-300'>
+    <div className='flex justify-between items-center px-6 py-5 bg-gray-300 text-gray-500 rounded-lg border border-gray-300 shadow-lg hover:shadow-xl hover:border-blue-400 hover:-translate-y-1 transition-all duration-300'>
       {/* Job Info Section */}
       <div className='flex flex-col items-start gap-3'>
         {/* Title and Company */}
-        <h1 className='text-xl font-bold text-gray-800'>
-          {props.title} - <span className='text-blue-500'>{props.company}</span>
+        <h1 className='text-2xl font-normal text-cyan-800'>
+          {props.title} - <span className='text-blue-800 font-extralight'>{props.company}</span>
         </h1>
         
         {/* Job Type, Experience, Location */}
@@ -41,7 +41,7 @@ function JobCard(props) {
 
         {/* Apply Button */}
         <a href={props.job_link} target="_blank" rel="noopener noreferrer">
-          <button className='bg-blue-500 text-white font-semibold px-6 py-2 rounded-full shadow-md hover:bg-blue-600 transition-all'>
+          <button className='bg-teal-800 text-white font-semibold px-6 py-2 rounded-full shadow-md hover:bg-teal-600 transition-all'>
             Apply
           </button>
         </a>

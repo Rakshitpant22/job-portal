@@ -23,7 +23,7 @@ function SearchBar(props) {
   return (
     <div className='flex gap-4 my-10 justify-center px-10'>
         <select onChange={handleChange} name="title" value={jobCriteria.title} 
-     className='w-64 py-3 pl-4 bg-gray-300 text-gray-700  font-mono rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300 transition-all'
+     className='w-64 py-3 pl-4 bg-gray-300 text-gray-800  font-thin rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-300 transition-all'
 
         >
             <option value="" disabled hidden>Job Role</option>
@@ -34,21 +34,21 @@ function SearchBar(props) {
             <option value="Developer Advocate">Developer Advocate</option>
         </select>
         <select onChange={handleChange} name="type" value={jobCriteria.type} 
-     className='w-64 py-3 pl-4 bg-gray-300 text-gray-700  font-mono rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600 transition-all'>
+     className='w-64 py-3 pl-4 bg-gray-300 text-gray-800  font-thin rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600 transition-all'>
      <option value="" disabled hidden>Job Type</option>
             <option value="Full Time">Full Time</option>
             <option value="Part Time">Part Time</option>
             <option value="Contract">Contract</option>
         </select>
         <select onChange={handleChange} name="location" value={jobCriteria.location} 
-     className='w-64 py-3 pl-4 bg-gray-300 text-gray-700  font-mono rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 transition-all'>
+     className='w-64 py-3 pl-4 bg-gray-300 text-gray-800  font-thin rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 transition-all'>
             <option value="" disabled hidden>Location</option>
             <option value="Remote">Remote</option>
             <option value="In-Office">In-Office</option>
             <option value="Hybrid">Hybrid</option>
         </select>
         <select onChange={handleChange} name="experience" value={jobCriteria.experience} 
-     className='w-64 py-3 pl-4 bg-gray-300 text-gray-700 font-mono rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 transition-all'>
+     className='w-64 py-3 pl-4 bg-gray-300 text-gray-800 font-thin rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-700 transition-all'>
             <option value="" disabled hidden>Experience</option>
             <option value="Fresher">Fresher</option>
             <option value="Junior Level">Junior Level</option>
@@ -56,7 +56,7 @@ function SearchBar(props) {
             <option value="Senior Level">Senior Level</option>
         </select>
         <button onClick={search} 
-        className='text-md font-xl text-white bg-blue-500 px-6 py-2 rounded-3xl hover:bg-blue-600 transition-colors'>Search</button>
+        className='text-md font-xl text-white bg-blue-700 px-6 py-2 rounded-3xl hover:bg-blue-800 transition-colors'>Search</button>
     </div>
   )
 }
